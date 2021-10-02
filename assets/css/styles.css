@@ -22,6 +22,10 @@ html {
     right: 0;
 }
 
+#nav {
+    display: inline-block;
+}
+
 #nav li {
     display: inline-block;
     position: relative;
@@ -45,6 +49,10 @@ html {
     color: #000;
 }
 
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
 #nav .subnav {
     display: none;
     position: absolute;
@@ -66,6 +74,24 @@ html {
     color: #000;
     line-height: 38.5px;
     padding-left: 16px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 24px;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+#header .search-btn:hover {
+    font-weight: 1500;
+    background-color: #f44336;
+    cursor: pointer;
 }
 
 #slider {
