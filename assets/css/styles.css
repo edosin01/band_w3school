@@ -9,6 +9,10 @@ html {
     font-size: 16px;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -153,6 +157,33 @@ html {
     text-align: justify;
     line-height: 22.5px;
 }
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-avatar {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 3px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .tour-date {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
 
 #footer {
 
