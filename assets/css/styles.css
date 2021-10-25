@@ -9,6 +9,10 @@ html {
     font-size: 16px;
 }
 
+.white-text {
+    color: #fff !important;
+}
+
 .clear {
     clear: both;
 }
@@ -25,6 +29,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 #nav {
@@ -130,7 +135,7 @@ html {
 }
 
 #content .content-section {
-    width: 800px;
+    width: 766px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
@@ -160,6 +165,7 @@ html {
 
 #content .member-list {
     margin-top: 48px;
+    padding-bottom: 32px;
 }
 
 #content .member-name {
@@ -178,12 +184,95 @@ html {
     text-align: center;
 }
 
-#content .tour-date {
+.tour-section {
     background-color: #000;
-    color: #fff;
-    width: 100%;
 }
 
+.ticket-list {
+    background-color: #fff;
+    max-width: 100%;
+    list-style: none;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    background-color: #000;
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.place-list {
+    margin: 32px -8px 57px;
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+    background-clip: content-box;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.60;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.place-time {
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.place-dsc {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
 
 #footer {
 
