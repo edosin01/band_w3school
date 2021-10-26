@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
+    
     <div id="main">
         <div id="header">
             <!-- Begin: Nav -->
@@ -95,7 +96,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-dsc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="js-place-buy-btn place-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -105,7 +106,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Fri 28 Nov 2016</p>
                                 <p class="place-dsc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="js-place-buy-btn place-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -115,7 +116,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Fri 29 Nov 2016</p>
                                 <p class="place-dsc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="js-place-buy-btn place-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -137,5 +138,65 @@
 
         </div>
     </div>
+
+    <div class="modal js-modal">
+        
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="ti-bag ti-bag-modal"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="ticket-quantity" class="modal-input" placeholder="How many?">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="text" id="ticket-email" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+        var place_buy_btns = document.querySelectorAll(".js-place-buy-btn");
+        var modal = document.querySelector(".js-modal");
+        var modal_container = document.querySelector(".js-modal-container");
+
+        // Display modal buy ticket
+        for(var btn of place_buy_btns) {
+            btn.onclick = function(e) {
+                modal.classList.add('open');
+            }
+        }
+        // Hide modal buy ticket
+        var close_modal_btn = document.querySelector('.js-modal-close');
+        close_modal_btn.onclick = function(e) {
+            modal.classList.remove('open');
+        }
+
+        modal.onclick = function(e) {
+            modal.classList.remove('open');
+        }
+
+        modal_container.onclick = function(e) {
+            e.stopPropagation();
+        }
+    </script>
 </body>
 </html>
