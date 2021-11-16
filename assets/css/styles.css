@@ -80,9 +80,6 @@ html {
 }
 
 /* Main */
-#main {
-
-}
  /* Begin: Header section */
 #header {
     height: 46px;
@@ -166,7 +163,9 @@ html {
     background-color: #f44336;
     cursor: pointer;
 }
+/* End: Header section */
 
+/* Begin: Slider section */
 #slider {
     position: relative;
     margin-top: 46px;
@@ -191,11 +190,9 @@ html {
     margin-top: 15px;
     font-weight: bolder;
 }
+/* End: Slider section */
 
-#content {
-
-}
-
+/* Begin: Content section */
 #content .content-section {
     width: 766px;
     padding: 64px 0 112px;
@@ -218,6 +215,7 @@ html {
     opacity: 0.6;
 }
 
+/* Begin: Member section */
 #content .about-text {
     text-align: justify;
     line-height: 22.5px;
@@ -232,7 +230,9 @@ html {
     width: 154px;
     border-radius: 3px;
 }
+/* End: Member section */
 
+/* Begin: Tour section */
 .tour-section {
     background-color: #000;
 }
@@ -300,7 +300,9 @@ html {
     line-height: 1.4;
     margin-bottom: 15px;
 }
+/* End: Tour section */
 
+/* Begin: Modal buy tickets */
 .modal {
     position: fixed;
     bottom: 0;
@@ -406,8 +408,9 @@ html {
         transform: translateY(0);
     }
 }
+/* End: Modal buy tickets */
 
-/* Contact form */
+/* Begin: Contact form */
 .contact-content {
     margin-top: 48px;
 }
@@ -441,13 +444,16 @@ html {
     color: #000;
     cursor: pointer;
 }
+/* End: Contact form */
 
-/* Map section */
+/* Begin: Map section */
 .map-section img {
     width: 100%;
     filter:grayscale(50%);
 }
+/* End: Map section */
 
+/* Begin: Footer section */
 #footer {
     padding: 64px 16px;
     text-align: center;
@@ -475,3 +481,4 @@ html {
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.7);
 }
+/* End: Footer section */
