@@ -200,6 +200,15 @@ html {
     margin-right: auto;
 }
 
+/* Responsive tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    #content .content-section {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 #content .section-heading {
     margin: 10px 0;
     font-size: 30px;
